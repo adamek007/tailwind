@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Start Page Redesigned</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="./output.css" />
+</head>
+<body class="bg-gray-100 font-sans">
+
+	<!-- Header -->
+	<header class="bg-black text-white shadow-md">
+		<nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+			<div class="flex items-center space-x-3">
+				<img src="../logo.svg" class="h-8 w-8" alt="Logo">
+				<span class="text-xl font-semibold">Start</span>
+			</div>
+
+			<div class="hidden md:flex space-x-8">
+				<a href="#" class="hover:text-gray-300">Home</a>
+				<a href="#" class="hover:text-gray-300">Portfolio</a>
+				<a href="#" class="hover:text-gray-300">Services</a>
+				<a href="#" class="hover:text-gray-300">Contact</a>
+			</div>
+
+			<button onclick="toggleMenu()" class="md:hidden focus:outline-none">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+				</svg>
+			</button>
+		</nav>
+
+		<div id="mobileMenu" class="md:hidden px-4 pb-4 hidden space-y-2">
+			<a href="#" class="block hover:underline">Home</a>
+			<a href="#" class="block hover:underline">Portfolio</a>
+			<a href="#" class="block hover:underline">Services</a>
+			<a href="#" class="block hover:underline">Contact</a>
+		</div>
+	</header>
+
+	<script>
+		function toggleMenu() {
+			document.getElementById("mobileMenu").classList.toggle("hidden");
+		}
+	</script>
+
+	<!-- Hero Section -->
+	<section class="max-w-7xl mx-auto py-12 px-4 flex flex-col-reverse md:flex-row items-center gap-10">
+		<div class="md:w-1/2 text-center md:text-left space-y-6">
+			<p class="uppercase tracking-widest text-sm font-bold text-gray-500">Welcome</p>
+			<h1 class="text-4xl font-bold text-gray-900">Lorem ipsum dolor sit amet consectetur</h1>
+			<p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis.</p>
+			<button class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700">Explore</button>
+		</div>
+		<div class="md:w-1/2">
+			<img src="../Image1.svg" alt="Hero" class="w-full max-w-lg rounded shadow-md">
+		</div>
+	</section>
+
+	<!-- Partners -->
+	<section class="bg-white text-center py-12">
+		<h2 class="text-sm uppercase text-gray-500 tracking-widest font-semibold">Partners</h2>
+		<h3 class="text-3xl font-bold mt-2">Lorem Ipsum Dolor</h3>
+		<p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet consectetur<br>adipisicing elit.</p>
+		<div class="flex flex-wrap justify-center gap-8 mt-8">
+			<img src="../google.svg" alt="Google" class="h-14">
+			<img src="../micosof.svg" alt="Microsoft" class="h-14">
+			<img src="../airbnb.svg" alt="Airbnb" class="h-14">
+			<img src="../facebook.svg" alt="Facebook" class="h-14">
+			<img src="../spotify.svg" alt="Spotify" class="h-14">
+		</div>
+		<button class="mt-8 bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700">Learn More</button>
+	</section>
+
+	<!-- Features -->
+	<section class="py-16 bg-gray-50 px-6 max-w-6xl mx-auto space-y-16">
+		<div class="flex flex-col md:flex-row items-center gap-10">
+			<img src="../ilu2.svg" alt="Illustration" class="max-w-sm">
+			<div>
+				<h3 class="text-2xl font-bold mb-2">Lorem ipsum dolor sit amet consectetur</h3>
+				<p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos.</p>
+				<button class="bg-indigo-600 text-white px-5 py-2 rounded hover:bg-indigo-700">Learn More</button>
+			</div>
+		</div>
+		<div class="flex flex-col md:flex-row-reverse items-center gap-10">
+			<img src="../ilu1.svg" alt="Illustration 2" class="max-w-sm">
+			<div>
+				<h3 class="text-2xl font-bold mb-2">Lorem ipsum dolor sit amet consectetur</h3>
+				<p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos.</p>
+				<button class="bg-indigo-600 text-white px-5 py-2 rounded hover:bg-indigo-700">Learn More</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Team -->
+	<section class="bg-white py-16">
+		<div class="text-center max-w-4xl mx-auto mb-10">
+			<h2 class="text-sm uppercase text-gray-500 font-bold">Team</h2>
+			<p class="text-3xl font-bold mt-2">Our Talents</p>
+			<p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto px-6">
+			<!-- Member cards -->
+			<div class="bg-gray-100 rounded-lg p-6 text-center shadow">
+				<img src="../profile1.svg" class="w-24 h-24 rounded-full mx-auto mb-4" alt="Peg Legge">
+				<h4 class="text-xl font-semibold">Peg Legge</h4>
+				<p class="text-sm text-gray-500 uppercase">CEO</p>
+			</div>
+			<div class="bg-gray-100 rounded-lg p-6 text-center shadow">
+				<img src="../profile2.svg" class="w-24 h-24 rounded-full mx-auto mb-4" alt="Richard Guerra">
+				<h4 class="text-xl font-semibold">Richard Guerra</h4>
+				<p class="text-sm text-gray-500 uppercase">CTO</p>
+			</div>
+			<div class="bg-gray-100 rounded-lg p-6 text-center shadow">
+				<img src="../profile3.svg" class="w-24 h-24 rounded-full mx-auto mb-4" alt="Alexandra Stolz">
+				<h4 class="text-xl font-semibold">Alexandra Stolz</h4>
+				<p class="text-sm text-gray-500 uppercase">Designer</p>
+			</div>
+			<div class="bg-gray-100 rounded-lg p-6 text-center shadow">
+				<img src="../profile4.svg" class="w-24 h-24 rounded-full mx-auto mb-4" alt="Janet Bray">
+				<h4 class="text-xl font-semibold">Janet Bray</h4>
+				<p class="text-sm text-gray-500 uppercase">Developer</p>
+			</div>
+		</div>
+		<div class="text-center mt-10">
+			<a href="#learn-more" class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800">Learn More</a>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="bg-black text-white py-8">
+		<div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+			<div class="flex space-x-4 mb-4 md:mb-0">
+				<img src="../sm_facebook.svg" alt="Facebook" class="h-6">
+				<img src="../sm_instagram.svg" alt="Instagram" class="h-6">
+				<img src="../sm_twitter.svg" alt="Twitter" class="h-6">
+				<img src="../sm_pinterest.svg" alt="Pinterest" class="h-6">
+				<img src="../sm_tiktok.svg" alt="TikTok" class="h-6">
+				<img src="../sm_whatsapp.svg" alt="WhatsApp" class="h-6">
+				<img src="../sm_yt.svg" alt="YouTube" class="h-6">
+			</div>
+			<p class="text-sm text-center md:text-right">© Start, 2022. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>
