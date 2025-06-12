@@ -3,15 +3,13 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Start Page Redesigned</title>
-	<script src="https://cdn.tailwindcss.com"></script>
+	<title>Page</title>
 	<link rel="stylesheet" href="./output.css" />
 </head>
 <body class="bg-gray-100 font-sans">
 
-	<!-- Header -->
-	<header class="bg-black text-white shadow-md">
-		<nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+	<header class="bg-black text-white shadow-md ">
+		<nav class="max-w-7xl mx-auto flex justify-between items-center p-4 bg-primary">
 			<div class="flex items-center space-x-3">
 				<img src="../logo.svg" class="h-8 w-8" alt="Logo">
 				<span class="text-xl font-semibold">Start</span>
@@ -45,22 +43,21 @@
 		}
 	</script>
 
-	<!-- Hero Section -->
-	<section class="max-w-7xl mx-auto py-12 px-4 flex flex-col-reverse md:flex-row items-center gap-10">
+	<section class="max-w-7xl mx-auto py-12 px-4 flex flex-col-reverse md:flex-row items-center gap-10 bg-primary">
 		<div class="md:w-1/2 text-center md:text-left space-y-6">
-			<p class="uppercase tracking-widest text-sm font-bold text-gray-500">Welcome</p>
-			<h1 class="text-4xl font-bold text-gray-900">Lorem ipsum dolor sit amet consectetur</h1>
-			<p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis.</p>
-			<button class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700">Explore</button>
+			<p class="uppercase tracking-widest text-sm font-bold text-white">Welcome</p>
+			<h1 class="text-4xl font-bold text-white">Lorem ipsum dolor sit amet consectetur</h1>
+			<p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis.</p>
+			<button class="bg-black text-white px-6 py-2 rounded hover:bg-indigo-700">Explore</button>
 		</div>
 		<div class="md:w-1/2">
 			<img src="../Image1.svg" alt="Hero" class="w-full max-w-lg rounded shadow-md">
 		</div>
 	</section>
 
-	<!-- Partners -->
+	
 	<section class="bg-white text-center py-12">
-		<h2 class="text-sm uppercase text-gray-500 tracking-widest font-semibold">Partners</h2>
+		<h2 class="text-sm uppercase text-primary tracking-widest font-semibold">Partners</h2>
 		<h3 class="text-3xl font-bold mt-2">Lorem Ipsum Dolor</h3>
 		<p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet consectetur<br>adipisicing elit.</p>
 		<div class="flex flex-wrap justify-center gap-8 mt-8">
@@ -70,17 +67,17 @@
 			<img src="../facebook.svg" alt="Facebook" class="h-14">
 			<img src="../spotify.svg" alt="Spotify" class="h-14">
 		</div>
-		<button class="mt-8 bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700">Learn More</button>
+		<button class="mt-8 bg-black text-white px-6 py-2 rounded hover:bg-indigo-700">Learn More</button>
 	</section>
 
-	<!-- Features -->
-	<section class="py-16 bg-gray-50 px-6 max-w-6xl mx-auto space-y-16">
+
+	<section class="py-16 bg-gray-50 px-6 max-w-6xl mx-auto space-y-16 ">
 		<div class="flex flex-col md:flex-row items-center gap-10">
 			<img src="../ilu2.svg" alt="Illustration" class="max-w-sm">
 			<div>
 				<h3 class="text-2xl font-bold mb-2">Lorem ipsum dolor sit amet consectetur</h3>
 				<p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos.</p>
-				<button class="bg-indigo-600 text-white px-5 py-2 rounded hover:bg-indigo-700">Learn More</button>
+				<button class="bg-black text-white px-5 py-2 rounded hover:bg-indigo-700">Learn More</button>
 			</div>
 		</div>
 		<div class="flex flex-col md:flex-row-reverse items-center gap-10">
@@ -88,12 +85,12 @@
 			<div>
 				<h3 class="text-2xl font-bold mb-2">Lorem ipsum dolor sit amet consectetur</h3>
 				<p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos.</p>
-				<button class="bg-indigo-600 text-white px-5 py-2 rounded hover:bg-indigo-700">Learn More</button>
+				<button class="bg-black text-white px-5 py-2 rounded hover:bg-indigo-700">Learn More</button>
 			</div>
 		</div>
 	</section>
 
-	<!-- Team -->
+
 	<section class="bg-white py-16">
 		<div class="text-center max-w-4xl mx-auto mb-10">
 			<h2 class="text-sm uppercase text-gray-500 font-bold">Team</h2>
@@ -101,7 +98,7 @@
 			<p class="text-gray-600 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		</div>
 		<div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto px-6">
-			<!-- Member cards -->
+
 			<div class="bg-gray-100 rounded-lg p-6 text-center shadow">
 				<img src="../profile1.svg" class="w-24 h-24 rounded-full mx-auto mb-4" alt="Peg Legge">
 				<h4 class="text-xl font-semibold">Peg Legge</h4>
@@ -128,8 +125,8 @@
 		</div>
 	</section>
 
-	<!-- Footer -->
-	<footer class="bg-black text-white py-8">
+
+	<footer class="bg-black text-white py-8 bg-primary">
 		<div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
 			<div class="flex space-x-4 mb-4 md:mb-0">
 				<img src="../sm_facebook.svg" alt="Facebook" class="h-6">
